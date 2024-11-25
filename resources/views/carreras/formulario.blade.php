@@ -1,26 +1,27 @@
         <div class="form-floating my-5">
           <input
-            type="name"
+            type="text"
             id="nombre"
             name="nombre"
             class="form-control"
             @if(isset($carrera))
               value={{$carrera->nombre}}
             @endif
+            required
           />
           <label for="name" class="form-label fuente">Nombre de la carrera:</label>
         </div>
         <div class="form-floating my-5">
             <input
               type="date"
-              id="fcreacion"
-              name="fcreacion"
+              id="vigencia"
+              name="vigencia"
               class="form-control"
               @if(isset($carrera))
                 value={{$carrera->fcreacion}}
               @endif
             />
-            <label for="fcreacion" class="form-label fuente">Fecha de creación</label>
+            <label for="vigencia" class="form-label fuente">Vigencia de la carrera</label>
           </div>
           <div class="form-floating my-5">
             <input
